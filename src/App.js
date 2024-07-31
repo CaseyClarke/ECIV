@@ -18,8 +18,12 @@ function App() {
               Loading...
             </div>
             <div className='circle'>
-            </div> 
+          </div> 
     </div>}
+
+    {!authenticated &&
+    <h1>oops i forgot a homepage</h1>
+    }
 
     </authContext.Provider>
   );
