@@ -4,10 +4,6 @@ import PerkIcon from "./PerkIcon";
 import './App.css';
 
 export default function ExoticSquare({inventory, perks, item}) {
-    // if(inventory.length == 0) {
-    //     return <div className="exoticSquare-inside">Looks like you don't have any of that classes exotic item</div>
-    // }
-
     let randomPerks = exoticClassPerks[item];
 
     let square = [
