@@ -5,7 +5,7 @@ export default function PerkIcon({perk}) {
     let display = getSandboxPerkDef(perk).displayProperties
     return (
         <div className="square-inside">
-            <img src={"https://www.bungie.net/" + display.icon} className="perk"></img>
+            <img src={"https://www.bungie.net/" + display.icon} className="perk" alt="" ></img>
         </div>
     )
 }

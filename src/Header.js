@@ -14,7 +14,7 @@ export default function Header() {
     </div>}
     {auth && <div className='profile'>
         <h1>{window.localStorage.getItem("destiny-name")}</h1>
-        <img style={{"border-radius" : "100%", "height" : "55px", "width" : "55px"}} src={"https://www.bungie.net/" + window.localStorage.getItem("profile-icon")}></img>
+        <img style={{"border-radius" : "100%", "height" : "55px", "width" : "55px"}} src={"https://www.bungie.net/" + window.localStorage.getItem("profile-icon")} alt="" ></img>
     </div>}
 
     </header>

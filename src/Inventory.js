@@ -35,7 +35,7 @@ export default function Inventory() {
       if(inv != null) {
         let inventory = inv.Response.profileInventory.data.items
         let perks = inv.Response.itemComponents.perks.data
-        {window.history.replaceState({}, "", window.location.href.split("?")[0])}
+        window.history.replaceState({}, "", window.location.href.split("?")[0])
 
         return (
         <div style={{"margin": "2vh"}}>

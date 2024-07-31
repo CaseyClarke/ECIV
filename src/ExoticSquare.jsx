@@ -24,7 +24,7 @@ export default function ExoticSquare({inventory, perks, item}) {
         let perkHashes = [];
 
         for(let j = 0; j < currentPerks.length; j++) {
-            if(randomPerks.col1.indexOf(currentPerks[j].perkHash) != -1 || randomPerks.col2.indexOf(currentPerks[j].perkHash) != -1 ) {
+            if(randomPerks.col1.indexOf(currentPerks[j].perkHash) !== -1 || randomPerks.col2.indexOf(currentPerks[j].perkHash) !== -1 ) {
                 perkHashes.push(currentPerks[j].perkHash)
             }
         }
@@ -38,7 +38,7 @@ export default function ExoticSquare({inventory, perks, item}) {
         <div  className="exoticSquare-inside">
         <div style={{"display" : "flex", "justify-content" : "flex-start"}} >
             <div style={{"width" : "calc(100% / 10)"}} >
-                <img className="item" src={"https://www.bungie.net/" + getInventoryItemDef(item).displayProperties.icon} ></img>
+                <img className="item" src={"https://www.bungie.net/" + getInventoryItemDef(item).displayProperties.icon} alt="" ></img>
             </div>
             
             {randomPerks.col1.map(perk => 
@@ -55,7 +55,7 @@ export default function ExoticSquare({inventory, perks, item}) {
             {row.map((cell, j) => 
                 <div onClick={() => handleDimCopy(randomPerks.col1[i], randomPerks.col2[j])} className="heatmapItem" style={{ "background-color" : `${cell > 0 ? "#119822" : "#002A32"}`}}>
                     {cell > 0 && 
-                        <img src="https://destinyitemmanager.com/favicon-32x32.png" className="dim-img"></img>
+                        <img src="https://destinyitemmanager.com/favicon-32x32.png" className="dim-img" alt="" ></img>
                     } 
                    <div style={{"display" : "flex", "justifyContent" : "center", "alignItems" : "center", "height" : "100%"}}>    
                         <div>
